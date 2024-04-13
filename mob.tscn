@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://cgthuujcpkcur"]
+[gd_scene load_steps=10 format=3 uid="uid://cgthuujcpkcur"]
 
+[ext_resource type="Script" path="res://mob.gd" id="1_hdova"]
 [ext_resource type="Texture2D" uid="uid://bfqtu65p5rsp3" path="res://art/enemyFlyingAlt_1.png" id="1_sv0ld"]
 [ext_resource type="Texture2D" uid="uid://bxnvug7ga5r6y" path="res://art/enemyFlyingAlt_2.png" id="2_67sbj"]
 [ext_resource type="Texture2D" uid="uid://ckpan3qavrs3b" path="res://art/enemySwimming_1.png" id="3_vpmxs"]
@@ -48,8 +49,10 @@ radius = 36.999
 height = 108.002
 
 [node name="Mob" type="RigidBody2D" groups=["mobs"]]
+position = Vector2(184, 116)
 collision_mask = 0
 gravity_scale = 1.66533e-16
+script = ExtResource("1_hdova")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
